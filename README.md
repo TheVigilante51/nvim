@@ -1,5 +1,12 @@
 This is my own configuration of neovim.
 <br>
+Screenshots:<br>
+![Screenshot](https://github.com/TheVigilante51/nvim/blob/master/Screenshot%20(47).png)
+![Screenshot](https://github.com/TheVigilante51/nvim/blob/master/Screenshot%20(46).png)
+![Screenshot](https://github.com/TheVigilante51/nvim/blob/master/Screenshot%20(45).png)
+![Screenshot](https://github.com/TheVigilante51/nvim/blob/master/Screenshot%20(44).png)
+![Screenshot](https://github.com/TheVigilante51/nvim/blob/master/Screenshot%20(43).png)
+![Screenshot](https://github.com/TheVigilante51/nvim/blob/master/Screenshot%20(42).png)
 Background Image:
 ![Background Image](https://github.com/TheVigilante51/nvim/blob/master/2006638.jpg) <br>
 Package Manager :<br>
