@@ -1,7 +1,7 @@
 This is my own configuration of neovim.
 <br>
 Background Image:
-<![Background Image]https://github.com/TheVigilante51/nvim/blob/master/2006638.jpg&raw=true>
+![Background Image](https://github.com/TheVigilante51/nvim/blob/master/2006638.jpg&raw=true) <br>
 Package Manager :<br>
  • packer.nvim<br>
 <br><br>
