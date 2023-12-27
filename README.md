@@ -35,6 +35,7 @@ Plugins (for extra features):<br>
  • LuaSnip (Snippet Engine)<br>
  • telescope.nvim (fuzzy finder)<br>
  • plenary.nvim (Required By Telescope)<br>
+ ![Screenshot](https://github.com/TheVigilante51/nvim/blob/master/Screenshot%20(48).png)
 <br>
  Notice that I don't have treesitter <br>
  This is due to the fact that it throws this "bad register name " error <br>
