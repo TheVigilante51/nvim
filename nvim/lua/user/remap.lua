@@ -8,7 +8,8 @@ vim.g.mapleader = " "
 
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex) -- Open the traditional neovim explorer
 vim.keymap.set("n", "<leader>e", vim.cmd.NERDTreeToggle) -- Toggle Nerd tree on and off
-vim.keymap.set("n", "<leader>ef", vim.cmd.NERDTreeFocus)
+vim.keymap.set("n", "<leader>ef", vim.cmd.NERDTreeFocus) -- Open the already open explorer
+vim.keymap.set("n", "<leader>er", vim.cmd.NERDTreeRefreshRoot) -- Refresh explorer
 
 -- -------------------------------------------------------------------------------------
 
