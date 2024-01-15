@@ -19,7 +19,6 @@ lsp_zero.setup()
 
 -- ---------------------------------------------------------------
 
--- [ERROR][2023-12-31 21:25:35] .../vim/lsp/rpc.lua:734	"rpc"	"C:\\Users\\gupta\\AppData\\Local\\Microsoft\\WinGet\\Links\\clangd.EXE"	"stderr"	"I[21:25:35.274] <-- textDocument/didClose\r\nI[21:25:35.274] --> textDocument/publishDiagnostics\r\n"
 require('lspconfig').clangd.setup{
 	on_attach = function()
 		print("Hello C/C++")
