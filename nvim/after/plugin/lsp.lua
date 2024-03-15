@@ -13,6 +13,7 @@ require('lspconfig').rust_analyzer.setup({})
 require('lspconfig').html.setup({})
 require('lspconfig').pylsp.setup({})
 require('lspconfig').arduino_language_server.setup({})
+require('lspconfig').asm_lsp.setup{}
 
 lsp_zero.setup_servers({'clangd',"asm_lsp" , 'html' , 'pylsp' , 'rust_analyzer', 'arduino_language_server'})
 lsp_zero.setup()

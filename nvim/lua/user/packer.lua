@@ -12,11 +12,25 @@ return require('packer').startup(function(use)
   -- Themes
   -- ------------------------------------------------------------------------
 
-  use { "catppuccin/nvim", as = "catppuccin" }
-  use { "EdenEast/nightfox.nvim", as = "nightfox" } 
-  use { "navarasu/onedark.nvim" }
-  use { "Mofiqul/vscode.nvim" }
-  use { "Mofiqul/dracula.nvim" }
+  use {             "rebelot/kanagawa.nvim"                         }
+  use {             "ellisonleao/gruvbox.nvim"                      }
+  use {             "catppuccin/nvim", as = "catppuccin"            }
+  use {             "EdenEast/nightfox.nvim", as = "nightfox"       } 
+  use {             "navarasu/onedark.nvim"                         }
+  use {             "Mofiqul/vscode.nvim"                           }
+  use {             "Mofiqul/dracula.nvim"                          }
+  use {             "folke/tokyonight.nvim"                         }
+  use {             "rose-pine/neovim"                              }
+  use {             "neanias/everforest-nvim"                       }
+  use {             "oxfist/night-owl.nvim"                         }
+  use {             "dasupradyumna/midnight.nvim"                   }
+  use {             "Alexis12119/nightly.nvim"                      }
+  use {             "marko-cerovac/material.nvim"                   }
+  use {             "Everblush/nvim"                                }
+  use {             "tiagovla/tokyodark.nvim"                       }
+  use {             "Mofiqul/adwaita.nvim"                          }
+  use {             "mhartington/oceanic-next"                      }
+
   use {
     'daltonmenezes/aura-theme',
     rtp = 'packages/neovim',
@@ -28,7 +42,20 @@ return require('packer').startup(function(use)
     'uloco/bluloco.nvim',
     requires = { 'rktjmp/lush.nvim' }
   }
-  use { "folke/tokyonight.nvim" }
+
+  use {
+    "scottmckendry/cyberdream.nvim",
+    config = function()
+        require("cyberdream").setup({
+            -- Recommended - see "Configuring" below for more config options
+            transparent = true,
+            italic_comments = true,
+            hide_fillchars = true,
+            borderless_telescope = true,
+            terminal_colors = true,
+        })
+    end,
+}
 
   -- ------------------------------------------------------------------------
 
@@ -51,14 +78,18 @@ return require('packer').startup(function(use)
     	{'L3MON4D3/LuaSnip'},
       }
   }
-
-  -- -----------------------------------------------------------------------
   
+  use 'vimwiki/vimwiki'
+  
+  -- -----------------------------------------------------------------------
+
   -- File Explorer (Nerd Tree)
   -- -----------------------------------------------------------------------
   
-  use  'preservim/nerdtree'  -- file explorer
+  use  'preservim/nerdtree'  -- File Explorer
   use 'ryanoasis/vim-devicons' -- Icons for file explorer
+  use 'tiagofumo/vim-nerdtree-syntax-highlight' -- Highlighting Different files
+  use 'PhilRunninger/nerdtree-buffer-ops'
 
   -- -----------------------------------------------------------------------
   
