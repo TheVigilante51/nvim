@@ -43,20 +43,6 @@ return require('packer').startup(function(use)
     requires = { 'rktjmp/lush.nvim' }
   }
 
-  use {
-    "scottmckendry/cyberdream.nvim",
-    config = function()
-        require("cyberdream").setup({
-            -- Recommended - see "Configuring" below for more config options
-            transparent = true,
-            italic_comments = true,
-            hide_fillchars = true,
-            borderless_telescope = true,
-            terminal_colors = true,
-        })
-    end,
-}
-
   -- ------------------------------------------------------------------------
 
   -- LSP
@@ -67,8 +53,8 @@ return require('packer').startup(function(use)
   	-- branch = 'v3.x',
   	requires = {
     	--- Uncomment these if you want to manage LSP servers from neovim
-    	-- {'williamboman/mason.nvim'},
-    	-- {'williamboman/mason-lspconfig.nvim'},
+    	{'williamboman/mason.nvim'},
+    	{'williamboman/mason-lspconfig.nvim'},
 
     	-- LSP Support
     	{'neovim/nvim-lspconfig'},
@@ -79,6 +65,7 @@ return require('packer').startup(function(use)
       }
   }
   
+  use "onsails/lspkind-nvim" -- Beautiful autocompletion
   use 'vimwiki/vimwiki'
   
   -- -----------------------------------------------------------------------
@@ -102,13 +89,21 @@ return require('packer').startup(function(use)
   	requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   }
 
-  use 'xiyaowong/transparent.nvim' -- making neovim transparent
+  use {
+  	'nvim-telescope/telescope.nvim',
+	-- or                            , branch = '0.1.x',
+  	requires = { 
+        {'nvim-lua/plenary.nvim'},
+        {'BurntSushi/ripgrep'}    
+    }
+  }
 
   use {
-  	'nvim-telescope/telescope.nvim', tag = '0.1.5',
-	-- or                            , branch = '0.1.x',
-  	requires = { {'nvim-lua/plenary.nvim'} }
+      'nvim-treesitter/nvim-treesitter',
+      branch = "master"
   }
+
+   
 
   use {"akinsho/toggleterm.nvim", tag = '*', config = function()
         require("toggleterm").setup()
