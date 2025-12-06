@@ -1,6 +1,7 @@
 This is my own configuration of neovim.
 <br>
-Screenshots:<br>
+*OLD* Screenshots:<br>
+Too lazy to upload new ones
 ![Screenshot](https://github.com/TheVigilante51/nvim/blob/master/Screenshot%20(45).png)<br><br>
 ![Screenshot](https://github.com/TheVigilante51/nvim/blob/master/Screenshot%20(44).png)<br><br>
 ![Screenshot](https://github.com/TheVigilante51/nvim/blob/master/Screenshot%20(43).png)<br><br>
