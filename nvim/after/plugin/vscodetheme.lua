@@ -25,4 +25,4 @@ require('vscode').setup({
     }
 })
 require('vscode').load()
-vim.cmd.colorscheme("aura-dark")
+vim.cmd.colorscheme("gruvbox")
