@@ -1,5 +1,5 @@
-![CAUTION]
-This is an old repo that I made back when I was in windows. I have since switched to CachyOS and will upload the new configurations soon.
+> [!CAUTION]
+> This is an old repo that I made back when I was in windows. I have since switched to CachyOS and will upload the new configurations soon.
 
 
 
